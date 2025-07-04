@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golden International Holidays</title>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+    }
+
+    header {
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      flex-wrap: wrap;
+    }
+
+    .logo-box {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-box img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    .logo-box h1 {
+      font-size: 24px;
+      color: #003366;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #003366;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .slideshow {
+      width: 100%;
+      height: 450px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slideshow img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .slideshow img.active {
+      opacity: 1;
+      position: absolute;
+    }
+
+    .packages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+
+    .package-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+    }
+
+    .package-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .package-card .info {
+      padding: 15px;
+    }
+
+    .package-card h3 {
+      margin-bottom: 10px;
+      color: #003366;
+    }
+
+    .form-container {
+      padding: 20px;
+      background: #fff;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    .form-container input,
+    .form-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-container button {
+      padding: 10px 20px;
+      background: #003366;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+  <header>
+  <div class="topbar">
+    <div class="left-section">
+      <div class="logo-box">
+        <img src="logo.png" alt="Logo">
+        <h1>Golden International Holidays</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    
+  </div>
+</header>
+
+
+  <section class="slideshow">
+    <img src="slide1.png" class="active" alt="Slide 1">
+    <img src="slide2.png" alt="Slide 2">
+    <img src="slide3.png" alt="Slide 3">
+    <img src="slide4.png" alt="Slide 3">
+  </section>
+
+  <section class="packages" id="packages">
+  <a href="bangkok.pdf" target="_blank" class="package-card">
+    <img src="bangkok.jpg" alt="Bangkok">
+    <div class="info">
+      <h3>Bangkok & Pattaya</h3>
+      <p>6N/7D – Beaches, Shopping & Adventure. <strong>₹45,000</strong></p>
+    </div>
+  </a>
+
+  <a href="phuket.pdf" target="_blank" class="package-card">
+    <img src="phuket.jpg" alt="Phuket">
+    <div class="info">
+      <h3>Phuket & Krabi</h3>
+      <p>5N/6D – Islands, Beaches, Snorkeling. <strong>₹43,500</strong></p>
+    </div>
+  </a>
+
+  <a href="vietnam.pdf" target="_blank" class="package-card">
+    <img src="vietnam.jpg" alt="Vietnam">
+    <div class="info">
+      <h3>Vietnam</h3>
+      <p>5N/6D – Nature, Culture & Food. <strong>₹42,000</strong></p>
+    </div>
+  </a>
+
+  <a href="dubai.pdf" target="_blank" class="package-card">
+    <img src="dubai.jpg" alt="Dubai">
+    <div class="info">
+      <h3>Dubai</h3>
+      <p>4N/5D – Desert Safari, Shopping, City Tours. <strong>₹55,000</strong></p>
+    </div>
+  </a>
+</section>
+
+<section id="about" style="padding: 30px; background: #fff; margin: 20px; border-radius: 10px;">
+  <h2 style="color: #003366; margin-bottom: 15px;">About Golden International Holidays</h2>
+  <p>
+    Golden International Holidays is your trusted travel partner offering domestic and international tour packages. 
+    With years of experience, we craft personalized holidays for families, friends, and corporate groups. 
+    Explore Thailand, Dubai, Vietnam, and more with us.
+  </p>
+</section>
+
+
+  <section class="form-container" id="contact">
+  <h2>Book Your Tour</h2>
+  <form id="contact-form">
+    <div class="form-group">
+      <input type="text" name="name" placeholder="👤 Your Name" required>
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" placeholder="📧 Your Email" required>
+    </div>
+    <div class="form-group">
+      <textarea name="message" rows="4" placeholder="📝 Your Message" required></textarea>
+    </div>
+    <button type="submit">Send Enquiry</button>
+  </form>
+</section>
+
+  <footer>
+  <p>&copy; 2025 Golden International Holidays | Phone: +91-9211381405</p>
+
+  <div class="whatsapp-button">
+    <a href="https://wa.me/919315857112" target="_blank">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+    </a>
+  </div>
+</footer>
+
+  <script>
+    // Slideshow
+    let slides = document.querySelectorAll('.slideshow img');
+    let current = 0;
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 3000);
+
+    // EmailJS init
+    emailjs.init("Rpk6yd8nDl0ydVl3T");
+
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      emailjs.sendForm('service_rtzzgs2', 'template_4hs7o8c', this)
+        .then(() => {
+          alert('Message sent successfully!');
+          this.reset();
+        }, (error) => {
+          alert('FAILED...', error);
+        });
+    });
+  </script>
+</body>
+
+</html>
+<head><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>

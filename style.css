@@ -1,0 +1,208 @@
+/* Header Styling */
+header {
+  background: linear-gradient(to right, #004080, #0073e6);
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.topbar {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+}
+
+.logo-box img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-box h1 {
+  font-size: 20px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-icon {
+  height: 35px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.header-icon:hover {
+  transform: scale(1.1);
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background: linear-gradient(to right, #004080, #0073e6);
+  flex-wrap: wrap;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.iata-logo img {
+  height: 40px;
+}
+
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-box img {
+  height: 40px;
+}
+
+.logo-box h1 {
+  font-size: 20px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+.right-icon img.header-icon {
+  height: 35px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.right-icon img.header-icon:hover {
+  transform: scale(1.1);
+}
+.form-container {
+  width: 35%;
+  margin: 40px 40px 20px 40px; /* top, right, bottom, left */
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+
+
+.form-container h2 {
+  text-align: left;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #0073e6;
+  outline: none;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #003366;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: #0059b3;
+}
+footer {
+  position: relative;
+}
+
+.whatsapp-button {
+  position: absolute;
+  right: 20px;
+  bottom: 5px;
+}
+
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1);
+}
